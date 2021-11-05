@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/00. Scenes/02. AimGame.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
