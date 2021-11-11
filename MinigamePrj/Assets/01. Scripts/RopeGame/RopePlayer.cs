@@ -6,17 +6,14 @@ using UnityEngine;
 public class RopePlayer : MonoBehaviour
 {
     private Rigidbody2D rigid;
-    private Vector3 playerPos;
 
-    [Header("������ �߽�")]
+    public float moveSpeed = 0;
     public GameObject hook;
-    public LayerMask layer;//�ӽ� �̸�
+    public LayerMask layer;
     private Vector2 mouseinput;
     private LineRenderer ropeLine;
-    private LineRenderer ropeAim;
 
 
-    [Header("�ν�Ʈ")]
     public int boostCount = 3;
     private float boostPower = 5f;
     private Vector2 beforePosition;
@@ -28,7 +25,6 @@ public class RopePlayer : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         ropeLine = GetComponent<LineRenderer>();
-        ropeAim = GetComponentInChildren<LineRenderer>();
     }
     private void Start()
     {
@@ -38,11 +34,7 @@ public class RopePlayer : MonoBehaviour
 
     private void Update()
     {
-        playerPos = Camera.main.WorldToViewportPoint(transform.position);
-        playerPos.x = Mathf.Clamp(playerPos.x, 0f, 1f);
-        playerPos.y = Mathf.Clamp(playerPos.y, 0f, 1f);
-
-        Mathf.Clamp(playerPos.y, 0f, 1f);
+        
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -64,13 +56,13 @@ public class RopePlayer : MonoBehaviour
         {
             GameOver();
         }
-
-        transform.position = Camera.main.ViewportToWorldPoint(playerPos);
     }
 
     private void FixedUpdate()
     {
         beforePosition = transform.position;
+        RopeGameManager.instance.MoveScreen(gameObject.transform, moveSpeed);
+        RopeGameManager.instance.MoveScreen(hook.transform, moveSpeed);
     }
 
     private void ShootRope()
@@ -82,6 +74,9 @@ public class RopePlayer : MonoBehaviour
         {
             hook.transform.position = hookPoint.point;
             ropeLine.SetPosition(1, hookPoint.point);
+
+            RopeGameBlock rp = hookPoint.collider.gameObject.GetComponent<RopeGameBlock>();
+            moveSpeed = rp.moveSpeed;
         }
     }
 

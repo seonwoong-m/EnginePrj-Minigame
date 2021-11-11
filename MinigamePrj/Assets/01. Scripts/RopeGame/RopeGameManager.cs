@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using DG.Tweening;
+using UnityEngine.UI;
 
 public class RopeGameManager : MonoBehaviour
 {
     public static RopeGameManager instance;
-
-    public bool isMove = false;
-    private float moveTime = 30f;
 
     public List<GameObject> spawnList = new List<GameObject>();
     private List<GameObject> blockList = new List<GameObject>();
@@ -18,7 +15,12 @@ public class RopeGameManager : MonoBehaviour
     public Transform hook;
     public GameObject[] systemPanel;
 
-    private Sequence seq;
+    //UI
+    public bool bPause = false;
+    private float score = 0;
+    public GameObject[] SystemPanel;
+    public Text inGameScore;
+    public Text panelScore;
 
     private void Awake()
     {
@@ -51,15 +53,7 @@ public class RopeGameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MoveScreen(this.gameObject.transform);
-        MoveScreen(hook.transform);
-        foreach (var item in blockList)
-        {
-            if (item.activeSelf)
-            {
-                MoveScreen(item.transform);
-            }
-        }
+        inGameScore.text = "Time : " + score.ToString("000000");
     }
 
     IEnumerator StageLoad()
@@ -81,7 +75,7 @@ public class RopeGameManager : MonoBehaviour
 
         while (true)
         {
-            count = Random.Range(1,2);
+            count = Random.Range(1, 2);
             ws = Random.Range(0.7f, 5f);
             for (int i = 0; i < count; i++)
             {
@@ -98,12 +92,11 @@ public class RopeGameManager : MonoBehaviour
         return player.GetComponent<RopePlayer>();
     }
 
-    public void MoveScreen(Transform transform)
+    public void MoveScreen(Transform transform, float moveSpeed)
     {
-        if (isMove)
+        if (!bPause)
         {
-            float speed = -Mathf.Lerp(0, 20, 1f / moveTime * Time.deltaTime);
-            transform.position = new Vector2(speed + transform.position.x, transform.position.y);
+            transform.position = new Vector2(transform.position.x - moveSpeed, transform.position.y);
         }
     }
 
