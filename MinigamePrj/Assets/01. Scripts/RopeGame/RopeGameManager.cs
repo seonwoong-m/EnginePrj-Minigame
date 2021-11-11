@@ -100,9 +100,28 @@ public class RopeGameManager : MonoBehaviour
         }
     }
 
+    public void SetScore(int plus)
+    {
+        if (!bPause)
+            score += plus;
+    }
+
+    public void Pause()
+    {
+        bPause = !bPause;
+        systemPanel[1].SetActive(bPause);
+    }
+
+    public void ReStart()
+    {
+        StopAllCoroutines();
+
+    }
+
     public void GameOver()
     {
         systemPanel[0].SetActive(true);
+        bPause = true;
     }
 
 

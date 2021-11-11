@@ -104,6 +104,18 @@ public class RopePlayer : MonoBehaviour
 
     }
 
+    public void bPause(bool pause)
+    {
+        if(pause)
+        {
+
+        }
+        else
+        {
+
+        }
+    }
+
     private void GameOver()
     {
         OnGameOver();

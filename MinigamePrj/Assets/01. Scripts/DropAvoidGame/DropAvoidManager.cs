@@ -88,6 +88,7 @@ public class DropAvoidManager : MonoBehaviour
         player.gameObject.SetActive(true);
 
         timeText.text = "TIME : ";
+        time = 0;
 
         systemPanel[0].SetActive(false);
         systemPanel[1].SetActive(false);
