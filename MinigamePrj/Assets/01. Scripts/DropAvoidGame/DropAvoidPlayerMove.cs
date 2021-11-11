@@ -5,16 +5,15 @@ using UnityEngine;
 
 public class DropAvoidPlayerMove : MonoBehaviour
 {
-    [Header("�̵�")]
+    public bool isMove = false;
     public float moveSpeed;
     private float currentMoveSpeed = 2f;
 
-    [Header("�뽬")]
+
     private bool isDash = false;
     private float dashPower = 10f;
     public float dashTime = 0.2f;
 
-    [Header("ü��")]
     private float maxHP = 5;
     public float currentHP;
 
@@ -41,18 +40,19 @@ public class DropAvoidPlayerMove : MonoBehaviour
 
     private void Update()
     {
-        playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        gameObject.transform.position = new Vector2(Mathf.Clamp(gameObject.transform.position.x, -8.5f, 8.5f), transform.position.y);
+        if (DropAvoidManager.bPause)
+        {
+            rigid.velocity = Vector2.zero;
+        }
 
-        playerPos.x = Mathf.Clamp(playerPos.x, 0f, 1f);
-        playerPos.y = Mathf.Clamp(playerPos.y, 0f, 1f);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8.5f, 8.5f), transform.position.y, 0);
 
         if (Input.GetAxis("Jump") > 0 ? true : false && !isDash)
         {
             isDash = true;
             StartCoroutine(Dash());
         }
-
-        transform.position = Camera.main.ViewportToWorldPoint(playerPos);
     }
 
     IEnumerator Dash()
@@ -82,8 +82,7 @@ public class DropAvoidPlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isDash) return;//Dash���̸� return 
-
+        if (isDash) return;
 
         if (Input.GetAxis("Horizontal") > 0)
         {
@@ -102,10 +101,9 @@ public class DropAvoidPlayerMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "Avoid")
         {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
             OnGameOver();
+            isDash = false;
         }
-
-
     }
 }

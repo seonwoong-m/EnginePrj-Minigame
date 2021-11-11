@@ -20,6 +20,7 @@ public class DropAvoidMoveDown : MonoBehaviour
 
     private void Update()
     {
+        if (DropAvoidManager.bPause) return;
         gameObject.transform.Translate(Vector2.down * downSpeed * Time.deltaTime);
         if (transform.position.y < -5f)
         {
