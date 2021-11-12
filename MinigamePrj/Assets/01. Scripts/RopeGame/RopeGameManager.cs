@@ -110,12 +110,29 @@ public class RopeGameManager : MonoBehaviour
     {
         bPause = !bPause;
         systemPanel[1].SetActive(bPause);
+        //Time.timeScale = bPause ? 0 : 1;
     }
 
     public void ReStart()
     {
         StopAllCoroutines();
+        bPause = false;
 
+        player.transform.position = new Vector3(-4f, 3.5f, 0);
+        hook.transform.position = new Vector3(0, 3.5f, 0);
+
+        foreach (var item in blockList)
+        {
+            item.SetActive(false);
+        }
+
+        player.GetComponent<RopePlayer>().moveSpeed = 0;
+        player.gameObject.SetActive(true);
+
+        systemPanel[0].SetActive(false);
+        systemPanel[1].SetActive(false);
+
+        StartCoroutine(StageLoad());
     }
 
     public void GameOver()

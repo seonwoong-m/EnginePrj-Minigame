@@ -93,6 +93,7 @@ public class RopePlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Item"))
         {
             boostCount++;
+            RopeGameManager.instance.SetScore(4);
             collision.gameObject.SetActive(false);
         }
 
@@ -104,20 +105,9 @@ public class RopePlayer : MonoBehaviour
 
     }
 
-    public void bPause(bool pause)
-    {
-        if(pause)
-        {
-
-        }
-        else
-        {
-
-        }
-    }
-
     private void GameOver()
     {
+        gameObject.SetActive(false);
         OnGameOver();
     }
 }
