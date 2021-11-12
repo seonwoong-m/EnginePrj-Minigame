@@ -1874,6 +1874,7 @@ MonoBehaviour:
   systemPanel:
   - {fileID: 1398341259}
   - {fileID: 1076469993}
+  - {fileID: 340459133}
   gunShot: {fileID: 0}
   waveText: {fileID: 2025112484}
   scoreText: {fileID: 1166632604}
@@ -1886,6 +1887,7 @@ MonoBehaviour:
   isOver: 0
   bPause: 0
   bSetting: 0
+  bHelp: 0
 --- !u!4 &635115626
 Transform:
   m_ObjectHideFlags: 0

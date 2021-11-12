@@ -36,6 +36,7 @@ public class AimManager : MonoBehaviour, ISystem
     public bool isOver = true;
     public bool bPause = false;
     public bool bSetting = false;
+    public bool bHelp = false;
 
     void Awake()
     {
@@ -191,5 +192,11 @@ public class AimManager : MonoBehaviour, ISystem
     {
         bSetting = true;
         GameManager.Instance.Setting();
+    }
+
+    public void Help()
+    {
+        bHelp = !bHelp;
+        systemPanel[2].SetActive(true);
     }
 }
