@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7441313483215086283}
   - component: {fileID: 1423237650937383200}
   m_Layer: 9
-  m_Name: Yellow
+  m_Name: Rainbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
-  - {fileID: 1268417632171224714}
+  - {fileID: 8572392262489921351}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -681082961
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 6358040702757662528, guid: 37c5e031d2a9e3d44a6e8e276bfd8c26, type: 3}
+  m_Sprite: {fileID: 6358040702757662528, guid: 0fa3e6b849ec1c94495b28c0ad1a6882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpBar: {fileID: 0}
-  ownScore: 4
+  ownScore: 15
   ownRand: 0
-  hp: 1
+  hp: 6
   bKill: 0
 --- !u!61 &1423237650937383200
 BoxCollider2D:
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.18}
+    oldSize: {x: 0.18, y: 0.2}
     newSize: {x: 0.18, y: 0.18}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -129,7 +129,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15155706, y: 0.17007804}
   m_EdgeRadius: 0
---- !u!1001 &1363362998491600738
+--- !u!1001 &8468650942733774511
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -189,25 +189,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7299468327067479998, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7299468327067479998, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7299468327067479998, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7299468327067479998, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
-      propertyPath: InitialModule.startColor.minMaxState
-      value: 0
+      propertyPath: lengthInSec
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
---- !u!4 &1268417632171224714 stripped
+--- !u!4 &8572392262489921351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 248243825848924648, guid: 744daafa8949c064ea572581e3d1443c, type: 3}
-  m_PrefabInstance: {fileID: 1363362998491600738}
+  m_PrefabInstance: {fileID: 8468650942733774511}
   m_PrefabAsset: {fileID: 0}

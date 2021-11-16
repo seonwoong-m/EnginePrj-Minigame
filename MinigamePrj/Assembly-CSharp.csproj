@@ -51,6 +51,7 @@
      <Compile Include="Assets\07. ImportAsset\Simple Scroll-Snap\Examples\Shared Resources\Scripts\ExpandInformation.cs" />
      <Compile Include="Assets\01. Scripts\ETC\MouseCursor.cs" />
      <Compile Include="Assets\01. Scripts\AimGame\Target.cs" />
+     <Compile Include="Assets\01. Scripts\ArrowGame\ArrowTutorial.cs" />
      <Compile Include="Assets\01. Scripts\DropAvoidGame\DropAvoidPlayerAnim.cs" />
      <Compile Include="Assets\01. Scripts\ETC\LoadSceneBtn.cs" />
      <Compile Include="Assets\01. Scripts\DropAvoidGame\DropAvoidManager.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\01. Scripts\DropAvoidGame\DropAvoidMoveDown.cs" />
      <Compile Include="Assets\01. Scripts\ArrowGame\Background.cs" />
      <Compile Include="Assets\07. ImportAsset\Simple Scroll-Snap\Examples\Example 1 (macOS Finder)\Scripts\FileSelected.cs" />
+     <Compile Include="Assets\01. Scripts\AimGame\DinoTutorial.cs" />
      <Compile Include="Assets\01. Scripts\RopeGame\RopePlayer.cs" />
      <Compile Include="Assets\01. Scripts\ETC\LoadingScene.cs" />
      <Compile Include="Assets\07. ImportAsset\Simple Scroll-Snap\Examples\Example 5 (Dynamic Content)\Scripts\DynamicContentController.cs" />

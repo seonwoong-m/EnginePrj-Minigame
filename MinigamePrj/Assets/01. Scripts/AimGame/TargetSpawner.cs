@@ -8,20 +8,19 @@ public class TargetSpawner : MonoBehaviour
     const float MIN_SEC = 0.2f;
     const float MAX_SEC = 1.0f;
 
-    public  GameObject[] applePrefabs = new GameObject[2];
+    public  List<GameObject> dinoPrefabs;   // 공룡 종류
+    public  List<GameObject> spawnPoints;   // 스폰될 위치
+    public  List<GameObject> dinos;         // 처치할 공룡 배열
     public  GameObject   parent;
     public  GameObject   target;
-    public  List<GameObject> spawnPoints;
-    public  List<GameObject> dinos;
 
     private AimManager   aimManager;
 
-    public float spawnTime = 0f;
-    public float spawnSec = 0f;
-    public int   aimScore = 0;
-
-    private int randP;
-    private int randSpawn;
+    public  float spawnTime = 0f;
+    public  float spawnSec = 0f;
+    public  int   aimScore = 0;
+    private int   randP;
+    private int   randSpawn;
 
     void Awake()
     {
@@ -30,7 +29,6 @@ public class TargetSpawner : MonoBehaviour
 
     void Start()
     {
-        //applePrefabs[0].transform.localScale = new Vector3(10f, 10f, 1f);
         spawnSec = Random.Range(MIN_SEC, MAX_SEC);
     }
 
@@ -48,39 +46,24 @@ public class TargetSpawner : MonoBehaviour
             while(true)
             {
                 randP = Random.Range(0, spawnPoints.Count);
-
-                if(spawnPoints[randP].activeSelf)
-                {
-                    break;
-                }
-                else
-                {
-                    return;
-                }
+                if(spawnPoints[randP].activeSelf) { break; }
+                else { return; }
             }
 
             spawnTime += Time.deltaTime;
 
             if (spawnTime >= spawnSec)
             {
-                randSpawn = Random.Range(1, 100);
+                randSpawn = Random.Range(1, 1000);
 
-                if (randSpawn <= 50)
-                {
-                    SpawnTarget(0);
-                }
-                else if (randSpawn > 50 && randSpawn <= 80)
-                {
-                    SpawnTarget(1);
-                }
-                else if (randSpawn > 80 && randSpawn <= 95)
-                {
-                    SpawnTarget(2);
-                }
-                else if (randSpawn > 95 && randSpawn <= 100)
-                {
-                    SpawnTarget(3);
-                }
+                if      (randSpawn <= 400)                     { SpawnTarget(0); } // 40% - 1pt
+                else if (randSpawn > 400 && randSpawn <= 600)  { SpawnTarget(1); } // 20% - 2pt
+                else if (randSpawn > 600 && randSpawn <= 750)  { SpawnTarget(2); } // 15% - 3pt
+                else if (randSpawn > 750 && randSpawn <= 800)  { SpawnTarget(3); } // 5% - 4pt
+                else if (randSpawn > 800 && randSpawn <= 900)  { SpawnTarget(4); } // 10% - -2pt
+                else if (randSpawn > 900 && randSpawn <= 980)  { SpawnTarget(5); } // 8% - 2hp
+                else if (randSpawn > 980 && randSpawn <= 995)  { SpawnTarget(6); } // 1.5% - 3hp
+                else if (randSpawn > 995 && randSpawn <= 1000) { SpawnTarget(7); } // 0.5% - 6hp
 
                 SetSpawnSec();
 
@@ -91,7 +74,7 @@ public class TargetSpawner : MonoBehaviour
 
     private void SpawnTarget(int n)
     {
-        target = Instantiate(applePrefabs[n], spawnPoints[randP].transform.position, Quaternion.identity, parent.transform);
+        target = Instantiate(dinoPrefabs[n], spawnPoints[randP].transform.position, Quaternion.identity, parent.transform);
         dinos.Add(target);
         target.GetComponent<Target>().ownRand = randP;
         spawnPoints[randP].SetActive(false);
