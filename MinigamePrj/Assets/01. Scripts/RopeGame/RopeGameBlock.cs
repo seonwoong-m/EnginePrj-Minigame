@@ -13,7 +13,7 @@ public class RopeGameBlock : MonoBehaviour
         {
             moveSpeed = Mathf.Lerp(0f, 30f, Random.Range(0.5f, 1f)) * 0.001f;
             float x = 13f;
-            float y = Random.Range(-4f, 4f);
+            float y = Random.Range(-3.5f, 3.5f);
             gameObject.transform.position = new Vector2(x, y);
         }
     }
