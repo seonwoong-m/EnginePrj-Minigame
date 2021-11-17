@@ -14,7 +14,7 @@ public class RopePlayer : MonoBehaviour
     private LineRenderer ropeLine;
 
 
-    public bool boostCount = true;
+    public int boostCount = 3;
     private float boostPower = 5f;
     private Vector2 beforePosition;
 
@@ -34,7 +34,9 @@ public class RopePlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump") && boostCount)
+        
+
+        if (Input.GetButtonDown("Jump"))
         {
             Boost();
         }
@@ -50,7 +52,7 @@ public class RopePlayer : MonoBehaviour
 
         mouseinput = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (hook.transform.position.x < -8.75f) 
+        if (hook.transform.position.x < -10) 
         {
             GameOver();
         }
@@ -80,27 +82,18 @@ public class RopePlayer : MonoBehaviour
 
     private void Boost()
     {
-        boostCount = false;
+        if (boostCount < 1) return;
+        boostCount--;
         Vector2 dir = (Vector2)transform.position - beforePosition;
         rigid.AddForce(dir.normalized * boostPower, ForceMode2D.Impulse);
-
-        StartCoroutine(ChargeBoost());
-    }
-
-    IEnumerator ChargeBoost()
-    {
-        SpriteRenderer sp = gameObject.GetComponent<SpriteRenderer>();
-        sp.color = Color.gray;
-        yield return new WaitForSeconds(5f);
-        boostCount = true;
-        sp.color = Color.white;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Item"))
         {
-            RopeGameManager.instance.SetScore(2);
+            boostCount++;
+            RopeGameManager.instance.SetScore(4);
             collision.gameObject.SetActive(false);
         }
 

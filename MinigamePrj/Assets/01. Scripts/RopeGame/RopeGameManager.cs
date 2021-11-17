@@ -53,7 +53,7 @@ public class RopeGameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        inGameScore.text = "Score : " + score.ToString("000000");
+        inGameScore.text = "Time : " + score.ToString("000000");
     }
 
     IEnumerator StageLoad()
@@ -127,14 +127,10 @@ public class RopeGameManager : MonoBehaviour
         }
 
         player.GetComponent<RopePlayer>().moveSpeed = 0;
-        player.GetComponent<RopePlayer>().boostCount = true;
-        player.GetComponent<SpriteRenderer>().color = Color.white;
         player.gameObject.SetActive(true);
 
         systemPanel[0].SetActive(false);
         systemPanel[1].SetActive(false);
-
-        score = 0;
 
         StartCoroutine(StageLoad());
     }
@@ -143,8 +139,6 @@ public class RopeGameManager : MonoBehaviour
     {
         systemPanel[0].SetActive(true);
         bPause = true;
-        panelScore.text = "Score : " + score.ToString("000000");
-
     }
 
 
