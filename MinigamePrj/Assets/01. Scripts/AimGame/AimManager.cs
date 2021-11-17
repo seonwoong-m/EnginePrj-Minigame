@@ -10,32 +10,39 @@ public class AimManager : MonoBehaviour, ISystem
 {
     public  GameObject[] systemPanel;
     public  AudioSource gunShot;
-
-    private Target  hitTarget;
-    private TargetSpawner targetSpawner;
+    public  GameObject effect;
     private Vector3 mousePos;
     private Camera  cam;
 
+    private Target  hitTarget;
+    private TargetSpawner targetSpawner;
+    private DinoTutorial tutorial;
+
+    [Header("여러 텍스트")]
     public  Text       waveText;
     public  Text       scoreText;
     public  Text       timeText;
     public  Text       highWaveText;
     public  Text       lastScoreText;
+
+    [Header("시작 화면")]
     public  Text       readyText;
     public  GameObject readyPanel;
     
     private float maxDis      { get; set; } = 15f;
     private float defaultSec  { get; set; } = 30f;
     private float timeSec     { get; set; }
+    private float plusTime    { get; set; } = 0f;
     private int   wave        { get; set; } = 1;
-    private int   highWave    { get; set; } = 1;
+    private int   highWave    { get; set; } = 1; // save
+    private int   highScore   { get; set; } = 0; // save
     private int   killedDinos { get; set; } = 0;
-
-    public int score = 0;
+    public  int   score = 0;
 
     public bool isOver = true;
     public bool bPause = false;
     public bool bSetting = false;
+    public bool bHelp = false;
 
     void Awake()
     {
@@ -43,6 +50,7 @@ public class AimManager : MonoBehaviour, ISystem
         bPause = false;
 
         cam = FindObjectOfType<Camera>();
+        tutorial = FindObjectOfType<DinoTutorial>();
         targetSpawner = GetComponent<TargetSpawner>();
         gunShot = GetComponent<AudioSource>();
 
@@ -51,21 +59,27 @@ public class AimManager : MonoBehaviour, ISystem
 
     void Start()
     {
-        timeSec = defaultSec;
-        gunShot.volume = GameManager.Instance.EFFECT_VOLUME.normalizedValue;
-        gunShot.mute = GameManager.Instance.EFFECT_MUTE.isOn;
+        plusTime = ((float)highScore / 90f) * 20f;
+        timeSec = defaultSec + plusTime;
+
+        if(GameManager.Instance != null)
+        {
+            gunShot.volume = GameManager.Instance.EFFECT_VOLUME.normalizedValue;
+            gunShot.mute = GameManager.Instance.EFFECT_MUTE.isOn;
+        }
+
         for(int i = 0; i < systemPanel.Length; i++)
         {
             systemPanel[i].SetActive(false);
         }
+
         readyText.DOFade(0, 1.5f).SetLoops(-1, LoopType.Yoyo);
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && readyPanel.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Space) && readyPanel.activeSelf && !tutorial.bTutorial)
         {
-
             readyText.DOFade(0, 0.5f).OnComplete(() => {
                 isOver = false;
                 readyPanel.SetActive(false);
@@ -110,7 +124,9 @@ public class AimManager : MonoBehaviour, ISystem
                                     }
                                 }
                                 
+                                //StartCoroutine(EnablePoint());
                                 targetSpawner.spawnPoints[hitTarget.ownRand].SetActive(true);
+                                targetSpawner.spawnPoints[hitTarget.ownRand].GetComponentInChildren<ParticleSystem>().Play();
                             }
                         });
                     }
@@ -139,6 +155,12 @@ public class AimManager : MonoBehaviour, ISystem
         TextUpdate();
     }
 
+    IEnumerator EnablePoint()
+    {
+        yield return new WaitForSeconds(0.2f);
+        
+    }
+
     void TextUpdate()
     {
         waveText.text = $"{wave}";
@@ -157,6 +179,11 @@ public class AimManager : MonoBehaviour, ISystem
 
     public void GameOver()
     {
+        if(score > highScore)
+        {
+            highScore = score;
+        }
+
         isOver = !isOver;
         systemPanel[0].SetActive(isOver);
         highWaveText.text = $"High Wave : {highWave}";
@@ -180,7 +207,9 @@ public class AimManager : MonoBehaviour, ISystem
         {
             Destroy(item);
         }
+
         targetSpawner.dinos.Clear();
+
         foreach (var item in targetSpawner.spawnPoints)
         {
             item.SetActive(true);
@@ -191,5 +220,11 @@ public class AimManager : MonoBehaviour, ISystem
     {
         bSetting = true;
         GameManager.Instance.Setting();
+    }
+
+    public void Help()
+    {
+        bHelp = !bHelp;
+        systemPanel[2].SetActive(bHelp);
     }
 }

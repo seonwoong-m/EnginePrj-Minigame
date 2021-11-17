@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 734687f27835ee4438e5122f75570236
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3440721677614696047
+    second: DinoSprites_-_mort_0
+  - first:
+      213: 6539429745120788241
+    second: DinoSprites_-_mort_1
+  - first:
+      213: -3469081731216534387
+    second: DinoSprites_-_mort_2
+  - first:
+      213: 7998737684598620963
+    second: DinoSprites_-_mort_3
+  - first:
+      213: -6122987065412044069
+    second: DinoSprites_-_mort_4
+  - first:
+      213: 860518523050582279
+    second: DinoSprites_-_mort_5
+  - first:
+      213: -1063435353655704686
+    second: DinoSprites_-_mort_6
+  - first:
+      213: 6050590092289824057
+    second: DinoSprites_-_mort_7
+  - first:
+      213: 6148822833019542481
+    second: DinoSprites_-_mort_8
+  - first:
+      213: 7482245738546269495
+    second: DinoSprites_-_mort_9
+  - first:
+      213: 7662130068214224328
+    second: DinoSprites_-_mort_10
+  - first:
+      213: 9058416570652800408
+    second: DinoSprites_-_mort_11
+  - first:
+      213: -8563666018399222532
+    second: DinoSprites_-_mort_12
+  - first:
+      213: -5986482326471705374
+    second: DinoSprites_-_mort_13
+  - first:
+      213: 5036540559517338475
+    second: DinoSprites_-_mort_14
+  - first:
+      213: -3585125542076031980
+    second: DinoSprites_-_mort_15
+  - first:
+      213: 5608958811286070089
+    second: DinoSprites_-_mort_16
+  - first:
+      213: -613757230177643874
+    second: DinoSprites_-_mort_17
+  - first:
+      213: -6225355360706074757
+    second: DinoSprites_-_mort_18
+  - first:
+      213: -1427101352203037617
+    second: DinoSprites_-_mort_19
+  - first:
+      213: 4470272772729394081
+    second: DinoSprites_-_mort_20
+  - first:
+      213: -5121108040724582237
+    second: DinoSprites_-_mort_21
+  - first:
+      213: 4632791666143850372
+    second: DinoSprites_-_mort_22
+  - first:
+      213: 3278484785710083552
+    second: DinoSprites_-_mort_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1993aca2dd91040d0800000000000000
+      internalID: -3440721677614696047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f3c8fa4b8b0ca50800000000000000
+      internalID: 6539429745120788241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d849a02ab885bdfc0800000000000000
+      internalID: -3469081731216534387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32308068b89310f60800000000000000
+      internalID: 7998737684598620963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdabdc974b7c60ba0800000000000000
+      internalID: -6122987065412044069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701e219990d21fb00800000000000000
+      internalID: 860518523050582279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29382cf1e2bed31f0800000000000000
+      internalID: -1063435353655704686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935de6ca1a308f350800000000000000
+      internalID: 6050590092289824057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_8
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbd0fce9c1055550800000000000000
+      internalID: 6148822833019542481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d0b384bd646d760800000000000000
+      internalID: 7482245738546269495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_10
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c59fba83ba555a60800000000000000
+      internalID: 7662130068214224328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895b541a0e5f5bd70800000000000000
+      internalID: 9058416570652800408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf40b36e02fb72980800000000000000
+      internalID: -8563666018399222532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecff74ba0ebbeca0800000000000000
+      internalID: -5986482326471705374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bc0e244f265e540800000000000000
+      internalID: 5036540559517338475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_15
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cd06570531f3ec0800000000000000
+      internalID: -3585125542076031980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_16
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943e082425607dd40800000000000000
+      internalID: 5608958811286070089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e921fec0d0f7b77f0800000000000000
+      internalID: -613757230177643874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_18
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b776a8468481b99a0800000000000000
+      internalID: -6225355360706074757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_19
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44557b91eae13ce0800000000000000
+      internalID: -1427101352203037617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_20
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3d2abf669990e30800000000000000
+      internalID: 4470272772729394081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_21
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0f638ae5b2ee8b0800000000000000
+      internalID: -5121108040724582237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_22
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fe4ea897bfa4040800000000000000
+      internalID: 4632791666143850372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinoSprites_-_mort_23
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eda5cdda848f7d20800000000000000
+      internalID: 3278484785710083552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
