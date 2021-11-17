@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637727472605324687
-    m_Hash: 573813559
+      ticks: 637727469762622257
+    m_Hash: 3900196509
   m_LockFileStatus:
     m_FilePath: "F:/\uC720\uB2C8\uD2F0 \uD504\uB85C\uC81D\uD2B8 \uBAA8\uC74C/\uBBF8\uB2C8\uAC8C\uC784
       \uD504\uB85C\uC81D\uD2B8/MinigamePrj/Packages/packages-lock.json"
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637727472605334658
-    m_Hash: 1469096933
+      ticks: 637727469762632233
+    m_Hash: 3558419548
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1153,13 +1153,13 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.7
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.11
+- packageId: com.unity.ide.visualstudio@2.0.12
   testable: 0
   isDirectDependency: 1
-  version: 2.0.11
+  version: 2.0.12
   source: 1
   resolvedPath: "F:\\\uC720\uB2C8\uD2F0 \uD504\uB85C\uC81D\uD2B8 \uBAA8\uC74C\\\uBBF8\uB2C8\uAC8C\uC784
-    \uD504\uB85C\uC81D\uD2B8\\MinigamePrj\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.11"
+    \uD504\uB85C\uC81D\uD2B8\\MinigamePrj\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.12"
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1221,13 +1221,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637613656180000000
+  datePublishedTicks: 637720564750000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+    revision: 8d436ff053b9c59677b5e9799208143553cd02d9
     path: 
   unityLifecycle:
     version: 2.0.11
