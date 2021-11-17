@@ -74,78 +74,6 @@ TextureImporter:
   - first:
       213: 3278484785710083552
     second: DinoSprites_-_mort_23
-  - first:
-      213: 6286595657586805340
-    second: Red_0
-  - first:
-      213: 1613127925512473047
-    second: Red_1
-  - first:
-      213: 5333967998348892124
-    second: Red_2
-  - first:
-      213: 2398322965701019735
-    second: Red_3
-  - first:
-      213: -7465866551671254797
-    second: Red_4
-  - first:
-      213: -8314221879049074932
-    second: Red_5
-  - first:
-      213: 4744403000761406451
-    second: Red_6
-  - first:
-      213: 7829259069414977506
-    second: Red_7
-  - first:
-      213: -5815146464303538831
-    second: Red_8
-  - first:
-      213: 2129389494081237454
-    second: Red_9
-  - first:
-      213: 5577207492566289022
-    second: Red_10
-  - first:
-      213: -8174016207417349085
-    second: Red_11
-  - first:
-      213: -383690438304193631
-    second: Red_12
-  - first:
-      213: -3853936905171992677
-    second: Red_13
-  - first:
-      213: 5001614241177408538
-    second: Red_14
-  - first:
-      213: -1422219833815749257
-    second: Red_15
-  - first:
-      213: 5806510531919626354
-    second: Red_16
-  - first:
-      213: -8640869339235213351
-    second: Red_17
-  - first:
-      213: -2510862584765665154
-    second: Red_18
-  - first:
-      213: 8386939831862851512
-    second: Red_19
-  - first:
-      213: -3583301422595798647
-    second: Red_20
-  - first:
-      213: 3698072006486610548
-    second: Red_21
-  - first:
-      213: -5034789619093568540
-    second: Red_22
-  - first:
-      213: -48909801595771465
-    second: Red_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -247,10 +175,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Red_0
+      name: DinoSprites_-_mort_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 3
         y: 3
         width: 18
         height: 18
@@ -261,17 +189,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5a89f851797e3750800000000000000
-      internalID: 6286595657586805340
+      spriteID: 1993aca2dd91040d0800000000000000
+      internalID: -3440721677614696047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_1
+      name: DinoSprites_-_mort_1
       rect:
         serializedVersion: 2
-        x: 29
+        x: 27
         y: 3
         width: 18
         height: 18
@@ -282,17 +210,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d90f613d4bf26610800000000000000
-      internalID: 1613127925512473047
+      spriteID: 11f3c8fa4b8b0ca50800000000000000
+      internalID: 6539429745120788241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_2
+      name: DinoSprites_-_mort_2
       rect:
         serializedVersion: 2
-        x: 53
+        x: 51
         y: 3
         width: 18
         height: 18
@@ -303,17 +231,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd713e842af060a40800000000000000
-      internalID: 5333967998348892124
+      spriteID: d849a02ab885bdfc0800000000000000
+      internalID: -3469081731216534387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_3
+      name: DinoSprites_-_mort_3
       rect:
         serializedVersion: 2
-        x: 77
+        x: 75
         y: 3
         width: 18
         height: 18
@@ -324,17 +252,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 758454bc70e884120800000000000000
-      internalID: 2398322965701019735
+      spriteID: 32308068b89310f60800000000000000
+      internalID: 7998737684598620963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_4
+      name: DinoSprites_-_mort_4
       rect:
         serializedVersion: 2
-        x: 101
+        x: 99
         y: 3
         width: 18
         height: 18
@@ -345,17 +273,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f01a275de9e36890800000000000000
-      internalID: -7465866551671254797
+      spriteID: bdabdc974b7c60ba0800000000000000
+      internalID: -6122987065412044069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_5
+      name: DinoSprites_-_mort_5
       rect:
         serializedVersion: 2
-        x: 125
+        x: 123
         y: 3
         width: 18
         height: 18
@@ -366,17 +294,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c07cf7b6043fd9c80800000000000000
-      internalID: -8314221879049074932
+      spriteID: 701e219990d21fb00800000000000000
+      internalID: 860518523050582279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_6
+      name: DinoSprites_-_mort_6
       rect:
         serializedVersion: 2
-        x: 149
+        x: 147
         y: 3
         width: 18
         height: 18
@@ -387,17 +315,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f35eab646187d140800000000000000
-      internalID: 4744403000761406451
+      spriteID: 29382cf1e2bed31f0800000000000000
+      internalID: -1063435353655704686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_7
+      name: DinoSprites_-_mort_7
       rect:
         serializedVersion: 2
-        x: 173
+        x: 171
         y: 3
         width: 18
         height: 18
@@ -408,17 +336,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ef2cf674ad17ac60800000000000000
-      internalID: 7829259069414977506
+      spriteID: 935de6ca1a308f350800000000000000
+      internalID: 6050590092289824057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_8
+      name: DinoSprites_-_mort_8
       rect:
         serializedVersion: 2
-        x: 197
+        x: 195
         y: 3
         width: 18
         height: 18
@@ -429,17 +357,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d9156c9137c4fa0800000000000000
-      internalID: -5815146464303538831
+      spriteID: 1dbd0fce9c1055550800000000000000
+      internalID: 6148822833019542481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_9
+      name: DinoSprites_-_mort_9
       rect:
         serializedVersion: 2
-        x: 221
+        x: 219
         y: 3
         width: 18
         height: 18
@@ -450,17 +378,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec1392f767c1d8d10800000000000000
-      internalID: 2129389494081237454
+      spriteID: 73d0b384bd646d760800000000000000
+      internalID: 7482245738546269495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_10
+      name: DinoSprites_-_mort_10
       rect:
         serializedVersion: 2
-        x: 245
+        x: 243
         y: 3
         width: 18
         height: 18
@@ -471,17 +399,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7a8f094aa8366d40800000000000000
-      internalID: 5577207492566289022
+      spriteID: 8c59fba83ba555a60800000000000000
+      internalID: 7662130068214224328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_11
+      name: DinoSprites_-_mort_11
       rect:
         serializedVersion: 2
-        x: 269
+        x: 267
         y: 3
         width: 18
         height: 18
@@ -492,17 +420,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c6a90319f009e80800000000000000
-      internalID: -8174016207417349085
+      spriteID: 895b541a0e5f5bd70800000000000000
+      internalID: 9058416570652800408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_12
+      name: DinoSprites_-_mort_12
       rect:
         serializedVersion: 2
-        x: 293
+        x: 291
         y: 3
         width: 18
         height: 18
@@ -513,17 +441,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a32a29449bdcaaf0800000000000000
-      internalID: -383690438304193631
+      spriteID: cf40b36e02fb72980800000000000000
+      internalID: -8563666018399222532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_13
+      name: DinoSprites_-_mort_13
       rect:
         serializedVersion: 2
-        x: 317
+        x: 315
         y: 3
         width: 18
         height: 18
@@ -534,17 +462,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9f7474cdc0148ac0800000000000000
-      internalID: -3853936905171992677
+      spriteID: 2ecff74ba0ebbeca0800000000000000
+      internalID: -5986482326471705374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_14
+      name: DinoSprites_-_mort_14
       rect:
         serializedVersion: 2
-        x: 341
+        x: 339
         y: 3
         width: 18
         height: 18
@@ -555,17 +483,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a141ae417ad496540800000000000000
-      internalID: 5001614241177408538
+      spriteID: b6bc0e244f265e540800000000000000
+      internalID: 5036540559517338475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_15
+      name: DinoSprites_-_mort_15
       rect:
         serializedVersion: 2
-        x: 365
+        x: 363
         y: 3
         width: 18
         height: 18
@@ -576,17 +504,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77da5eca892434ce0800000000000000
-      internalID: -1422219833815749257
+      spriteID: 41cd06570531f3ec0800000000000000
+      internalID: -3585125542076031980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_16
+      name: DinoSprites_-_mort_16
       rect:
         serializedVersion: 2
-        x: 389
+        x: 387
         y: 3
         width: 18
         height: 18
@@ -597,17 +525,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27042a7809ed49050800000000000000
-      internalID: 5806510531919626354
+      spriteID: 943e082425607dd40800000000000000
+      internalID: 5608958811286070089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_17
+      name: DinoSprites_-_mort_17
       rect:
         serializedVersion: 2
-        x: 413
+        x: 411
         y: 3
         width: 18
         height: 18
@@ -618,17 +546,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df12540e17751880800000000000000
-      internalID: -8640869339235213351
+      spriteID: e921fec0d0f7b77f0800000000000000
+      internalID: -613757230177643874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_18
+      name: DinoSprites_-_mort_18
       rect:
         serializedVersion: 2
-        x: 437
+        x: 435
         y: 3
         width: 18
         height: 18
@@ -639,17 +567,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e70393348cf972dd0800000000000000
-      internalID: -2510862584765665154
+      spriteID: b776a8468481b99a0800000000000000
+      internalID: -6225355360706074757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_19
+      name: DinoSprites_-_mort_19
       rect:
         serializedVersion: 2
-        x: 461
+        x: 459
         y: 3
         width: 18
         height: 18
@@ -660,17 +588,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b772c65755646470800000000000000
-      internalID: 8386939831862851512
+      spriteID: f44557b91eae13ce0800000000000000
+      internalID: -1427101352203037617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_20
+      name: DinoSprites_-_mort_20
       rect:
         serializedVersion: 2
-        x: 485
+        x: 483
         y: 3
         width: 18
         height: 18
@@ -681,17 +609,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 989860f575e854ec0800000000000000
-      internalID: -3583301422595798647
+      spriteID: 1a3d2abf669990e30800000000000000
+      internalID: 4470272772729394081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_21
+      name: DinoSprites_-_mort_21
       rect:
         serializedVersion: 2
-        x: 509
+        x: 507
         y: 3
         width: 18
         height: 18
@@ -702,17 +630,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 472537c85e0325330800000000000000
-      internalID: 3698072006486610548
+      spriteID: 3a0f638ae5b2ee8b0800000000000000
+      internalID: -5121108040724582237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_22
+      name: DinoSprites_-_mort_22
       rect:
         serializedVersion: 2
-        x: 533
+        x: 531
         y: 3
         width: 18
         height: 18
@@ -723,17 +651,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e38a135485d02ab0800000000000000
-      internalID: -5034789619093568540
+      spriteID: 48fe4ea897bfa4040800000000000000
+      internalID: 4632791666143850372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red_23
+      name: DinoSprites_-_mort_23
       rect:
         serializedVersion: 2
-        x: 557
+        x: 555
         y: 3
         width: 18
         height: 18
@@ -744,8 +672,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b569d96bcc325ff0800000000000000
-      internalID: -48909801595771465
+      spriteID: 0eda5cdda848f7d20800000000000000
+      internalID: 3278484785710083552
       vertices: []
       indices: 
       edges: []
