@@ -17,6 +17,9 @@ public class ArrowManager : MonoBehaviour, ISystem
     [HideInInspector]
     public List<int> copyInt;
 
+    [Header("시작 화면")]
+    private ArrowTutorial tutorial;
+
     public List<GameObject> characters; // 공룡 프리팹
     public List<GameObject> liveChars; // 스폰된 공룡
     public GameObject[] systemPanel; // 0:게임오버, 1:일시정지, 
@@ -31,31 +34,44 @@ public class ArrowManager : MonoBehaviour, ISystem
     public SpawnArrow spawnArr;
     public GameObject endArrow;
     public GameObject charParent;
+    public RectTransform arrowLine;
     public Text[] allTexts; // timeText, waveText, highWaveText, scoreText
     public Image centerImg;
     public Toggle BGM_Mute;
+    public AudioClip wrongSound;
     private GameObject character;
     private AudioSource arrowSound;
 
-    public float MAX_TIME   { get; set; } = 30f;
-    public float timeSec    { get; set; }
-    public int   wave       { get; set; } = 1;
-    public int   highWave   { get; set; } = 1;
-    public int   scoreCount { get; set; } = 0;
-    public int   charCount  { get; set; } = -1;
+    private float plusTime   { get; set; } = 0f;
+    private int wrongCount = 0;
+    public  float MAX_TIME   { get; set; } = 30f;
+    public  float timeSec    { get; set; }
+    public  int   wave       { get; set; } = 1;
+    public  int   highWave   { get; set; } = 1; // save
+    public  int   scoreCount { get; set; } = 0;
+    public  int   charCount  { get; set; } = -1;
     
     public bool isOver = false;
     public bool bPause = false;
+    public bool bTimeStop = true;
 
     void Awake()
     {
-        arrowSound = GetComponent<AudioSource>();
-        arrowSound.clip = GameManager.Instance.effect_Sounds[1];
+        tutorial = FindObjectOfType<ArrowTutorial>();
+
+        if(GameManager.Instance != null)
+        {
+            arrowSound = GetComponent<AudioSource>();
+            arrowSound.clip = GameManager.Instance.effect_Sounds[1];
+        }
     }
 
     void Start()
     {
-        timeSec = MAX_TIME;
+        if(highWave != 0)
+        plusTime = (highWave / 5) * 5;
+
+        timeSec = MAX_TIME + plusTime;
 
         for(int i = 0; i < systemPanel.Length; i++)
         {
@@ -74,26 +90,31 @@ public class ArrowManager : MonoBehaviour, ISystem
             {
                 if (Input.anyKeyDown)
                 {
+                    if(bTimeStop && !tutorial.bTutorial)
+                    {
+                        bTimeStop = false;
+                    }
+
                     foreach (var dic in keyDic)
                     {
                         if (Input.GetKeyDown(dic.Key))
                         {
-                            if (dic.Value <= 7)
-                            {
-                                ArrowCheck(dic.Value);
-                            }
+                            ArrowCheck(dic.Value);
                         }
                     }
                 }
 
-                if (timeSec > 0)
+                if(!bTimeStop)
                 {
-                    timeSec = Mathf.Clamp(timeSec - Time.deltaTime, 0, MAX_TIME);
-                    TextUpdate();
-                }
-                else
-                {
-                    GameOver();
+                    if (timeSec > 0)
+                    {
+                        timeSec = Mathf.Clamp(timeSec - Time.deltaTime, 0, MAX_TIME);
+                        TextUpdate();
+                    }
+                    else
+                    {
+                        GameOver();
+                    }
                 }
             }
 
@@ -112,6 +133,18 @@ public class ArrowManager : MonoBehaviour, ISystem
             scoreCount++;
             StartCoroutine(SetColor(Color.blue));
 
+            if(arrowSound.clip != GameManager.Instance.effect_Sounds[1])
+            arrowSound.clip = GameManager.Instance.effect_Sounds[1];
+            
+            if(arrowSound.clip != null)
+            {
+                arrowSound.Stop();
+                arrowSound.Play();
+            }
+
+            arrowLine.DOShakeAnchorPos(0.1f, 10, 50).OnComplete(() => {
+                arrowLine.anchoredPosition = Vector2.zero;
+            });
 
             Debug.Log(spawnArr.arrs[0]);
 
@@ -135,10 +168,31 @@ public class ArrowManager : MonoBehaviour, ISystem
         else
         {
             Debug.Log("삐빅");
+            
+            if(arrowSound.clip != wrongSound)
+            arrowSound.clip = wrongSound;
+            arrowSound.Play();
+
             scoreCount = Mathf.Clamp(scoreCount--, 0, int.MaxValue);
+            wrongCount++;
+            if(wrongCount % 3 == 0)
+            {
+                //TODO 공룡 날리기
+                if(liveChars.Count != 0)
+                {
+                    liveChars[0].transform.DOJump(Vector3.up * 10f, 3f, 1, 1f).OnComplete(() => { 
+                        Destroy(liveChars[0]);
+                        liveChars.RemoveAt(0);
+                    });
+                }
+            }
             StartCoroutine(SetColor(Color.red));
-            ClearEndArr();
-            spawnArr.RespawnArrs(copyInt, copyImg);
+
+            arrowLine.DOShakeAnchorPos(0.1f, 100, 100).OnComplete(() => {
+                ClearEndArr();
+                spawnArr.RespawnArrs(copyInt, copyImg);
+                arrowLine.anchoredPosition = Vector2.zero;
+            });
         }
     }
 
@@ -165,8 +219,8 @@ public class ArrowManager : MonoBehaviour, ISystem
 
     void TextUpdate()
     {
-        allTexts[1].text = $"{wave}";
         allTexts[0].text = $"TIME : {timeSec:F2}";
+        allTexts[1].text = $"{wave}";
     }
 
     void ClearEndArr()

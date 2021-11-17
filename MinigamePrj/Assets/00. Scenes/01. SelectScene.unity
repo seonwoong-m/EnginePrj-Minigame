@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 95882396}
   - component: {fileID: 95882395}
   - component: {fileID: 95882394}
+  - component: {fileID: 95882397}
   m_Layer: 5
   m_Name: GameImage
   m_TagString: Untagged
@@ -199,6 +200,62 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: 90}
   m_SizeDelta: {x: 336.7627, y: 336.7627}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &95882397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95882393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 95882394}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1656818900}
+        m_TargetAssemblyTypeName: SelectManager, Assembly-CSharp
+        m_MethodName: ChangeSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &146033325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,12 +1292,6 @@ MonoBehaviour:
   - 04. MouseAvoidGame
   - 05. DropAvoidGame
   - 06. RopeGame
-  gameImage:
-  - {fileID: 21300000, guid: 9342fc7f00f8bd847aa48b8cad4d0dbf, type: 3}
-  - {fileID: 21300000, guid: 535b1a9bc520a134e86a09e65961415e, type: 3}
-  - {fileID: 21300000, guid: f6ef4edd23a41784fad186fd82b9739f, type: 3}
-  - {fileID: 21300000, guid: 7a892aa3ffacdec4fb1a2d1899c8afee, type: 3}
-  - {fileID: 21300000, guid: 47c7e5e7b5bdf1c418853d677d955a96, type: 3}
 --- !u!4 &1656818901
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ public class SelectManager : MonoBehaviour
     public Text  gameText;
     public Text[] gameNames;
     public string[] gameScenes;
-    public Sprite[] gameImage;
     public Dictionary<KeyCode, int> keyDic = new Dictionary<KeyCode, int>
     {
         { KeyCode.RightArrow, 1 },
@@ -34,6 +33,7 @@ public class SelectManager : MonoBehaviour
     {
         selectNum = 0;
         ChangeGameImage();
+        ChangeSelect(-1);
         defaultPos = gameNames[1].rectTransform.position;
     }
 
