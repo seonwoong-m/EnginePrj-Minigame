@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/00. Scenes/06. RopeGame.unity
+- path: Assets/00. Scenes/00. StartScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
