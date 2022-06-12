@@ -1,3 +1,3 @@
-# 2nd_EngingPrj-Minigame
+# EngingPrj-Minigame
 
 게임엔진프로젝트
